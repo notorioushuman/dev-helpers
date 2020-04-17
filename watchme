@@ -1,0 +1,5 @@
+#!/bin/sh
+# Devilbox helper. Run npm watch in docker container
+
+cd ~/projects/devilbox/ && \
+docker-compose exec --user devilbox php bash -l -c "cd path/to/webpack/config/file;npm run watch;"
